@@ -24,11 +24,16 @@ GitHub Pages: `https://camilalareste-bot.github.io/gravy-data-engineering-assess
 
 - `SUBMISSION.md` — architecture review and assessment reasoning
 - `source/models.py` — canonical contract and provider capabilities
+- `source/providers.py` — Alpha Vantage, Twelve Data, ExchangeRate API and ECB reference-rate adapters
 - `source/pipeline.py` — bounded retries and capability-aware failover
-- `source/frankfurter_ecb.py` — public no-key ECB reference-rate demo adapter
-- `source/schema.sql` — PostgreSQL raw, watermark, and quarantine tables
+- `source/frankfurter_ecb.py` — isolated public no-key ECB demo adapter
+- `source/schema.sql` — PostgreSQL raw, watermark, quarantine and idempotent upsert design
 - `source/dbt_models.sql` — representative dbt analytical models
 - `source/tests.py` — core behavioral tests
+
+## Local submission package
+
+The ZIP version contains the full Python package layout, separate dbt model files, SQL scripts, unit tests, the static demo and its `.git` history.
 
 ## Scope note
 
